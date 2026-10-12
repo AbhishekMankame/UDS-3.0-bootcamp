@@ -37,3 +37,33 @@ Example : rmdir my_new_project
 *For a folder containing files (foces deletion quietly):*
 Syntax : rmdir /s /q <folder-name>
 Example : rmdir /s /q my_new_project
+
+**Unix (Mac/Linux)**
+*For an empty folder:*
+Syntax : rmdir <folder-name>
+Example : rmdir my_new_project
+
+*For a folder containing files (recursive and forced):*
+Syntax : rm -rf <folder-name>
+Example : rm -rf my_new_project
+
+# Creating an Empty File
+
+**Windows (CMD)**
+*CMD doesn't have a direct equivalent to 'touch', but this is the standard workaround.*
+Syntax : type nul > <file-name>
+Example : type nul > main.py
+
+**Unix (Mac/Linux)**
+Syntax : touch <file-name>
+Example : touch main.py
+
+# Deleting a File
+
+**Windows (CMD)**
+Syntax : del <file-name>
+Example : del main.py
+
+**Unix (Mac/Linux)**
+Syntax : rm <file-name>
+Example : rm main.py
