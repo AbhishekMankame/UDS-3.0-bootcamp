@@ -1,0 +1,17 @@
+# Create uv environmet (Local vs. Global)
+
+**Option A: Local (Project-Specific)**
+*Creates a hidden `.venv` folder in your current directory. Best for deployments and isolated repositories.*
+Syntax : uv venv --python 3.xx
+Example : uv venv --python 3.12
+
+**Option B: Global (Centralized)**
+*Creates the environment in a specific permanent folder, mimicking Conda. Best for Jupyter, exploring, and daily development.*
+Syntax : uv venv --python 3.xx
+Example : uv venv --python 3.12 C:\envs\UDS3
+
+# Activating the uv environment
+
+**For Local environments:**
+Syntax (Windows) : ..venv\Scripts\activate
+Syntax (Unix/Mac-OS) : source .venv/bin/activate
