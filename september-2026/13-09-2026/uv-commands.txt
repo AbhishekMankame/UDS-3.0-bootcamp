@@ -15,3 +15,8 @@ Example : uv venv --python 3.12 C:\envs\UDS3
 **For Local environments:**
 Syntax (Windows) : ..venv\Scripts\activate
 Syntax (Unix/Mac-OS) : source .venv/bin/activate
+
+**For Global environments:**
+Syntax (Windows)     : \Scripts\activate
+Example (Windows)    : C:\envs\UDS3\Scripts\activate
+Example (Unix/Mac-os): source ~/envs/UDS3/bin/activate
