@@ -1,0 +1,42 @@
+## Tye Casting in Python
+
+Type Casting is the method to convert the Python variable datatype into a certain data type in order to perform the required operation by users.
+
+- Implicit Type Conversion
+- Explicit Type Conversion
+
+Example:
+age = "21" // Here 'age' is in the form of string
+age = int(age) // Converts 'age' from 'string' to 'int'
+print(age + 5) // Output: 26
+print(type(age)) // Output: <class 'int'>
+
+## Implicit Type Conversion
+Implicit type conversion is the automatic changing of a data value from one type to another by the compiler or runtime environment without any manual intervention from the programmer.
+
+Example:
+
+# Python automatically converts 'a' to int
+a = 7
+print(type(a)) # Output: <class 'int'>
+
+# Python automatically converts 'b' to float
+b = 3.0
+print(type(b)) # Output: <class 'float'>
+
+# Python automatically converts 'c' to float as it is a float addition
+c = a + b
+print(c) # Output: 10.0
+print(type(c)) # Output: <class 'float'>
+
+# Python automatically converts 'd' to float as it is a float multiplication
+d = a * b
+print(d) # Output: 21.0
+print(type(d)) # Output: <class 'float'>
+
+Explanation:
+- 'a' is an integer and 'b' is a floating-point number.
+- During a + b, Python automatically converts 'a' to float, so 'c' becomes 10.0
+- During a * b, Python again converts 'a' to float, so 'd' becomes 21.0
+- Since the operations involve both 'int' and 'float', the results are returned as 'float'.
+- This automatic conversion is known as implicit type conversion.
