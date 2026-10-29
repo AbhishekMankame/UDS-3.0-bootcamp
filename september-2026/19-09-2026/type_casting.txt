@@ -40,3 +40,48 @@ Explanation:
 - During a * b, Python again converts 'a' to float, so 'd' becomes 21.0
 - Since the operations involve both 'int' and 'float', the results are returned as 'float'.
 - This automatic conversion is known as implicit type conversion.
+
+## Explicit Type Conversion
+Explicit type conversion is when the progarmmer manually changes a value's data type using built-in type casting functions, usually when automatic conversion is not possible or a specific type is needed.
+
+Example:
+
+Commonly used type casting functions in Python are:
+- int() function take float or string as an arguement and returns int type object.
+- float() function take int or string as an arguement and returns float type object.
+- str() function takes float or int as an arguement and returns string type object.
+
+# Convert 'int' to 'float':
+Converting int to float in with the float() function:
+a = 5
+n = float(a)
+print(n)    # Output: 5.0
+print(type(n))  # Output: <class 'function'>
+
+# Convert 'float' to 'int'
+Converting float to int datatype with int() function.
+a = 5.9
+n = int(a)
+print(n)    # Output: 5
+print(type(n))  # Output: <class 'int'>
+
+# Adding 'string' and 'integer' without conversion
+If we try to directly add an integer and a string, Python will throw an error because they are different data types.
+
+a = 5
+b = 't'
+
+n = a + b
+print(n)
+print(type(n))
+
+Output: TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+We should first convert the string into an integer and then add:
+a = 5
+b = '7'
+
+# explicit conversion of string to int
+n = a + int(b)
+print(n)    # Output: 12
+print(type(n))  # Output: <class 'int'>
