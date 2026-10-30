@@ -1,0 +1,14 @@
+## Enabling `uv` to run `ipynb` files.
+
+C:\..\..\Scripts\activate ---> This is to activate the Python environment
+
+uv pip install ipykernel ---> This is to install the ipykernel in my Python environment
+
+python -m ipykernel install --user --name="python-3.12" --display="python-3.12 UDS"
+--> By using this command, we will register our uv venv in the usual location.
+
+When we register in the usual location, we will be able to find uv venv in the select kernel option.
+
+Note: Here, `name` should be our `uv` environment name and `display` should be what it need to be displayed.
+
+install jupyter from Microsoft extension from vscode
