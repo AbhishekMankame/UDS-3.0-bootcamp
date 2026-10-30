@@ -20,3 +20,25 @@ Syntax (Unix/Mac-OS) : source .venv/bin/activate
 Syntax (Windows)     : \Scripts\activate
 Example (Windows)    : C:\envs\UDS3\Scripts\activate
 Example (Unix/Mac-os): source ~/envs/UDS3/bin/activate
+
+
+# Run python file (.py) using uv
+
+**Method 1: Standard**
+Step-1 : Go to the location where file is present
+Step-2 : Activate the environment
+Step-3 : python .py
+
+**Method 2: The uv shortcut (No activation required)**
+*If you run this inside a project folder, uv automatically finds the local `.venv` and use it.*
+Step-1 : Go to the location where file is present
+Step-2 : uv run .py
+
+# VSCODE SPECIFIC > Registering Global Kernels & Fixing Detection
+
+Because `uv` does not automatically register global environments to VS Code like Conda does, you must manually attach it to Jupyter. This completely bypass the infinite "detecting kernels" loop because VS Code just reads the central Jupyter registry.
+
+Run these commands after activating your global environment in the terminal:
+command-1: uv pip install ipykernel
+command-2: python -m ipykernel install --user --name="" --display-name=""
+Example: python -m ipykernel install --user --name="UDS3" --display-name="Python 3.12 (UDS3-Global)"
